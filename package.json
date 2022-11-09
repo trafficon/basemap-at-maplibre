@@ -1,0 +1,17 @@
+{
+  "name": "basemap-at-maplibre",
+  "version": "0.1.0",
+  "engines": {
+    "node": "^18.0.0",
+    "npm": "^8.0.0"
+  },
+  "private": true,
+  "scripts": {
+    "start": "serve",
+    "prettier": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "2.7.1",
+    "serve": "14.1.1"
+  }
+}
