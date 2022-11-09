@@ -5,4 +5,4 @@ This example shows how to use the [basemap.at](https://basemap.at/) Vector Map w
 
 ## Attribution
 
-- [basemap.at](https://basemap.at/) Tiles are [released under](https://basemap.at/#lizenz) [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- [basemap.at](https://basemap.at/) Tiles [are released](https://basemap.at/#lizenz) under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
