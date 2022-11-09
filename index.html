@@ -23,12 +23,14 @@
   <body>
     <div id="map"></div>
     <script>
-      new maplibregl.Map({
+      var map = new maplibregl.Map({
         container: 'map',
         style: 'https://maps.wien.gv.at/basemapv/bmapv/3857/resources/styles/root.json',
         center: [13.00975, 47.6964],
         zoom: 7,
       });
+
+      map.addControl(new maplibregl.AttributionControl({ customAttribution: 'Quelle: <a href="https://basemap.at/" target="_blank" rel="noopener">basemap.at</a>' }));
     </script>
   </body>
 </html>
