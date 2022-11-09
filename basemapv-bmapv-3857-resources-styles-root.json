@@ -1,7 +1,7 @@
 {
   "version": 8,
-  "sprite": "../sprites/sprite",
-  "glyphs": "../fonts/{fontstack}/{range}.pbf",
+  "sprite": "https://maps.wien.gv.at/basemapv/bmapv/3857/resources/sprites/sprite",
+  "glyphs": "https://maps.wien.gv.at/basemapv/bmapv/3857/resources/fonts/{fontstack}/{range}.pbf",
   "sources": {
     "esri": {
       "type": "vector",
@@ -9,7 +9,7 @@
       "minzoom": 0,
       "maxzoom": 19,
       "scheme": "xyz",
-      "url": "../../"
+      "url": "/basemapv-bmapv-3857.json"
     }
   },
   "layers": [

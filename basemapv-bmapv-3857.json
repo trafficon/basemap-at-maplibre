@@ -5,7 +5,7 @@
   "type": "indexedVector",
   "tileMap": "tilemap",
   "defaultStyles": "resources/styles",
-  "tiles": ["tile/{z}/{y}/{x}.pbf"],
+  "tiles": ["https://maps.wien.gv.at/basemapv/bmapv/3857/tile/{z}/{y}/{x}.pbf"],
   "exportTilesAllowed": false,
   "initialExtent": {
     "xmin": 986146.501299999654,
