@@ -1,24 +1,24 @@
 {
-  "currentVersion": 10.91,
+  "currentVersion": 11.2,
   "name": "VTC",
   "capabilities": "TilesOnly",
   "type": "indexedVector",
   "tileMap": "tilemap",
   "defaultStyles": "resources/styles",
-  "tiles": ["https://maps.wien.gv.at/basemapv/bmapv/3857/tile/{z}/{y}/{x}.pbf"],
+  "tiles": ["https://mapsneu.wien.gv.at/basemapv/bmapv/3857/tile/{z}/{y}/{x}.pbf"],
   "exportTilesAllowed": false,
   "initialExtent": {
     "xmin": 986146.501299999654,
-    "ymin": 5840213.40250000358,
-    "xmax": 1910328.55730000138,
-    "ymax": 6278344.8497999981,
+    "ymin": 5745524.72114902548,
+    "xmax": 1910328.54610000178,
+    "ymax": 6373033.54145097174,
     "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
   },
   "fullExtent": {
     "xmin": 986146.501299999654,
-    "ymin": 5840213.40250000358,
-    "xmax": 1910328.55730000138,
-    "ymax": 6278344.8497999981,
+    "ymin": 5745524.72114902548,
+    "xmax": 1910328.54610000178,
+    "ymax": 6373033.54145097174,
     "spatialReference": { "wkid": 102100, "latestWkid": 3857 }
   },
   "minScale": 295828763.7957775,

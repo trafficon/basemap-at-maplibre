@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
   <head>
     <meta charset="utf-8" />
     <title>basemap.at MapLibre</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-    <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
-    <link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel="stylesheet" />
+    <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+    <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
     <style>
       body {
         margin: 0;
@@ -25,13 +25,17 @@
     <script>
       var map = new maplibregl.Map({
         container: 'map',
-        style: 'basemapv-bmapv-3857-resources-styles-root.json',
-        center: [13.00975, 47.6964],
-        zoom: 7,
-        maxZoom: 17
+        style: 'basemapvectorneu-root.json',
+        bounds: [8.8587, 45.7823, 17.1608, 49.5752],
+        fitBoundsOptions: { padding: 200 },
+        attributionControl: false,
       });
 
-      map.addControl(new maplibregl.AttributionControl({ customAttribution: 'Quelle: <a href="https://basemap.at/" target="_blank" rel="noopener">basemap.at</a>' }));
+      map.addControl(
+        new maplibregl.AttributionControl({
+          customAttribution: 'Quelle: <a href="https://basemap.at/" target="_blank" rel="noopener">basemap.at</a>',
+        }),
+      );
     </script>
   </body>
 </html>

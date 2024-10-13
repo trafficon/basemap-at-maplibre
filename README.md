@@ -5,12 +5,14 @@ with [MapLibre GL JS](https://github.com/maplibre/maplibre-gl-js).
 
 ## How to use basemap.at Vector styles with MapLibre GL JS
 
-> **Warning**
-> As of 2022-11-10 the currently distributed [Style JSON](https://maps.wien.gv.at/basemapv/bmapv/3857/resources/styles/root.json) uses relative paths. This is not supported by MapLibre (or the spec). For a current working example see [index.html](index.html) which uses a tempered [Style JSON](basemapv-bmapv-3857-resources-styles-root.json).
+> [!CAUTION]
+> As of 2024-10-13 the currently distributed [Source JSON](https://mapsneu.wien.gv.at/basemapv/bmapv/3857/) uses a relative path for `tiles`. This is not supported by the [TileJSON spec](https://github.com/mapbox/tilejson-spec/tree/master/3.0.0#32-tiles). For a current working example see [index.html](index.html) which uses a tempered [Style JSON](basemapvectorneu-root.json) pointing to a tempered [tile source JSON](basemapv-bmapv-3857.json).
+
+### Should work, once official JSONs are fixed
 
 ```html
-<script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
-<link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel="stylesheet" />
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
 <style>
   #map {
     position: absolute;
@@ -23,10 +25,10 @@ with [MapLibre GL JS](https://github.com/maplibre/maplibre-gl-js).
 <script>
   var map = new maplibregl.Map({
     container: 'map',
-    style: 'https://maps.wien.gv.at/basemapv/bmapv/3857/resources/styles/root.json',
-    center: [13.00975, 47.6964],
-    zoom: 7,
-    maxZoom: 17,
+    style: 'https://mapsneu.wien.gv.at/basemapvectorneu/root.json',
+    bounds: [8.8587, 45.7823, 17.1608, 49.5752],
+    fitBoundsOptions: { padding: 200 },
+    attributionControl: false,
   });
 
   map.addControl(
@@ -39,5 +41,4 @@ with [MapLibre GL JS](https://github.com/maplibre/maplibre-gl-js).
 
 ## Attribution
 
-- [basemap.at](https://basemap.at/) Tiles [are released](https://basemap.at/#lizenz)
-  under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- [basemap.at](https://basemap.at/) Tiles [are released](https://basemap.at/#lizenz) under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
